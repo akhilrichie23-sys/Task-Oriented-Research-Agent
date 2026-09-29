@@ -1,0 +1,18 @@
+# Environment variables
+.env
+.env.local
+
+# Python cache & virtual environments
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+ENV/
+
+# Agent local caches and outputs
+.cache/
+.cache_test/
+
+# OS artifacts
+.DS_Store

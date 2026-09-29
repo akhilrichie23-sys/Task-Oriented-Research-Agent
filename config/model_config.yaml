@@ -1,0 +1,30 @@
+# Model Routing Definitions
+models:
+  tier_1:
+    name: "gemini-2.5-flash"
+    provider: "google"
+    max_tokens: 2048
+    temperature: 0.2
+    cost_per_1k_input: 0.000075
+    cost_per_1k_output: 0.000300
+    use_cases:
+      - "query_generation"
+      - "content_summarization"
+      - "relevance_filtering"
+
+  tier_2:
+    name: "gemini-2.5-pro"
+    provider: "google"
+    max_tokens: 4096
+    temperature: 0.4
+    cost_per_1k_input: 0.001250
+    cost_per_1k_output: 0.005000
+    use_cases:
+      - "deep_reasoning"
+      - "synthesis_and_decision"
+      - "final_report_generation"
+
+
+routing_thresholds:
+  complexity_score_threshold: 0.65
+  max_search_iterations: 3
